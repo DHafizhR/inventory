@@ -45,6 +45,12 @@
                     </a>
                 </li>
 
+                <li class="sidebar-item">
+                    <a href="{{ route('notifikasi.index') }}" class="sidebar-link">
+                        <span>Notifikasi</span>
+                    </a>
+                </li>
+
 
             </ul>
         </div>

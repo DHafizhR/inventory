@@ -5,6 +5,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\GudangController;
 use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\NotifikasiController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,6 +34,9 @@ Route::resource('warehouse', GudangController::class);
 
 // Inventory
 Route::resource('inventory', InventoryController::class);
+
+//
+Route::resource('notifikasi', NotifikasiController::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
